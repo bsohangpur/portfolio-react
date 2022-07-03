@@ -1,5 +1,5 @@
 import HofWrapper from "../../container/HofWrapper/HofWrapper";
-import { heroImg, ImgReact, ImgNext, ImgJavaS, ImgFigma } from "../../images/index";
+import { heroImg } from "../../images/index";
 import {Data} from "../../container/AllData/Data";
 
 const [logoPrograming] = Data;
