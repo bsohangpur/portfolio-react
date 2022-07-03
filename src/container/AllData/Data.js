@@ -1,4 +1,4 @@
-import { heroImg, ImgReact, ImgNext, ImgJavaS, ImgFigma, ImgHtml, Imgcss, Imggit, Imgps, LogoTure, LogoClick, LogoSnip, LogoAppen, LogoUpwork, LogoFiverr, Img1, Img2, Img3, Img4, Img5, Img6, FacebookIcon, TwitterIcon, InstagramIcon, GithubIcon, LinkedinIcon, DarkBtn, LightBtn, BrandLogoDark, BrandLogoLight } from "../../images/index"
+import { heroImg, ImgReact, ImgNext, ImgJavaS, ImgFigma, ImgHtml, Imgcss, Imggit, Imgps, LogoTure, LogoClick, LogoSnip, LogoAppen, LogoUpwork, LogoFiverr, Img1, FacebookIcon, TwitterIcon, InstagramIcon, GithubIcon, LinkedinIcon, DarkBtn, LightBtn, BrandLogoDark, BrandLogoLight } from "../../images/index"
 
 const Data = [
     {
