@@ -9,7 +9,7 @@ const About = () => {
     return (
         <section className="h-4/5 w-4/5 container mx-auto md:flex lg:flex">
             <div className="main-service-section w-full md:w-1/2 lg:w-1/2">
-                <div className="title-text text-2xl text-blue-600">
+                <div className="title-text text-2xl text-blue-600 mb-4">
                     <h2>Main Service</h2>
                 </div>
                 <div className="main-service w-5/6 h-full">
@@ -20,19 +20,19 @@ const About = () => {
             </div>
 
             <div className="aboutme-section w-full md:w-1/2 lg:w-1/2">
-                <div className="aboutme-box w-5/6 h-1/2">
-                    <div className="title-text text-2xl text-blue-600">
+                <div className="aboutme-box h-1/2">
+                    <div className="title-text text-2xl text-blue-600 mb-4">
                         <h2>About me</h2>
                     </div>
                     <div className="aboutme-text">
                         <div className="aboutme-text">
-                            <h4>Hello my name is</h4>
+                            <h4 className="text-sm md:text-lg lg:text-xl">Hello my name is</h4>
                         </div>
-                        <div className="aboutme-name">
-                            <h2>Burhanuddin Sohangpurwala</h2>
+                        <div className="aboutme-name mb-3">
+                            <h2 className="text-lg md:text-xl lg:text-2xl text-blue-400">Burhanuddin Sohangpurwala</h2>
                         </div>
-                        <div className="aboutme-title">
-                            <h3>Front End Developer with React.js, UI designer</h3>
+                        <div className="aboutme-title mb-2">
+                            <h3 className="text-lg md:text-xl lg:text-2xl text-purple-700">Front End Developer with React.js, UI designer</h3>
                         </div>
                         <div className="aboutme-paragraph">
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam quaerat repellat quam unde praesentium omnis aliquid expedita ipsa optio perferendis.</p>
@@ -43,7 +43,7 @@ const About = () => {
                     <div className="title-text text-2xl text-blue-600 h-1/6">
                         <h2>Main skills</h2>
                     </div>
-                    <div className="mainskill-box grid grid-cols-3 content-center gap-4 h-5/6 w-4/6">
+                    <div className="mainskill-box grid grid-cols-3 content-center gap-4 h-5/6 ">
                         {
 
                             logoImg.map((img, index) => {

@@ -1,6 +1,6 @@
 import HofWrapper from "../../container/HofWrapper/HofWrapper";
-// import { ImWhatsapp } from "react-icons/im";
-// import { MdOutlineAlternateEmail } from "react-icons/md"
+import { ImWhatsapp } from "react-icons/im";
+import { MdOutlineAlternateEmail } from "react-icons/md"
 
 
 const Contact = () => {
@@ -8,11 +8,11 @@ const Contact = () => {
         <section className="h-4/5 w-4/5 container mx-auto contact-section">
             <div className="contact-detail-box w-full h-1/3 md:h-1/4 lg:h-1/4 flex flex-col md:flex-row lg:flex-row justify-center items-center">
                 <div className="contact-detail contact-detail-phone h-4/5 flex justify-center items-center gap-8 text-xl">
-                    {/* <ImWhatsapp className='contact-icon' /> */}
+                    <ImWhatsapp className='contact-icon' />
                     <h3>+91 (942) 7637 853</h3>
                 </div>
                 <div className="contact-detail contact-detail-email h-4/5 flex justify-center items-center gap-8 text-xl">
-                    {/* <MdOutlineAlternateEmail className='contact-icon' /> */}
+                    <MdOutlineAlternateEmail className='contact-icon' />
                     <h3>bsohangpur@gmail.com</h3>
                 </div>
             </div>
