@@ -1,6 +1,6 @@
 import HofWrapper from "../../container/HofWrapper/HofWrapper";
 import {Data} from "../../container/AllData/Data";
-
+import WorkSection from "./Work-section/WorkSection";
 
 const [resumeData] = Data;
 const skillImg = resumeData.logoProgramingLang;
@@ -13,7 +13,9 @@ const Resume = () => {
                     <div className="title-text h-1/6 text-2xl text-blue-600">
                         <h2 className='resume-text-title'>Work Experiance</h2>
                     </div>
+                    
                     <div className="resume-experiance-section-one h-5/6 ">
+                        <WorkSection/>
                         <div className="resume-experiance-btn h-1/5 flex justify-center items-center gap-8">
                             <button className="w-32 h-12">Download CV</button>
                             <button className="w-32 h-12">Hire ME</button>
@@ -31,9 +33,8 @@ const Resume = () => {
                                     return (
                                         <div key={index} className="skill-section relative">
                                             <div className="skill-section-outer h-24 w-24 rounded-full flex justify-center items-center">
-                                                <div className="skill-section-inner p-2 h-20 w-20 rounded-full relative flex justify-center items-center ">
-                                                    <img src={skill.src} alt={skill.alt} width="" height="" />
-
+                                                <div className="skill-section-inner h-20 w-20 rounded-full relative flex justify-center items-center ">
+                                                    <img src={skill.src} alt={skill.alt} className="w-3/4"/>
                                                 </div>
                                             </div>
                                         </div>

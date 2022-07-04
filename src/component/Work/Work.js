@@ -1,54 +1,54 @@
 import HofWrapper from "../../container/HofWrapper/HofWrapper";
-// import { useState } from "react";
-// import { Img1, Img2, Img3, Img4, Img5, Img6 } from "../../images/index";
-
+import { useState } from "react";
+import { Img1, Img2, Img3, Img4, Img5, Img6 } from "../../images/index";
+import {AiOutlineArrowRight, AiOutlineArrowLeft} from "react-icons/ai"
 
 const Work = () => {
-//     const [indexValue, setIndexValue] = useState(1)
-//     const projectCard = [
-//         {
-//             id: 1,
-//             src: Img1
-//         },
-//         {
-//             id: 2,
-//             src: Img2
-//         },
-//         {
-//             id: 3,
-//             src: Img3
-//         },
-//         {
-//             id: 4,
-//             src: Img4
-//         },
-//         {
-//             id: 5,
-//             src: Img5
-//         },
-//         {
-//             id: 6,
-//             src: Img6
-//         }
-//     ];
+        const [indexValue, setIndexValue] = useState(1)
+        const projectCard = [
+            {
+                id: 1,
+                src: Img1
+            },
+            {
+                id: 2,
+                src: Img2
+            },
+            {
+                id: 3,
+                src: Img3
+            },
+            {
+                id: 4,
+                src: Img4
+            },
+            {
+                id: 5,
+                src: Img5
+            },
+            {
+                id: 6,
+                src: Img6
+            }
+        ];
 
-//     const rightClick = () => {
-//         if (indexValue !== projectCard.length) {
-//             setIndexValue(indexValue + 1)
-//         }
-//         else if (indexValue === projectCard.length) {
-//             setIndexValue(1)
-//         }
-//     }
-//     const leftClick = () => {
-//         if (indexValue !== 1) {
-//             setIndexValue(indexValue - 1)
+        const rightClick = () => {
+            if (indexValue !== projectCard.length) {
+                setIndexValue(indexValue + 1)
+            }
+            else if (indexValue === projectCard.length) {
+                setIndexValue(1)
+            }
+        }
+        const leftClick = () => {
+            if (indexValue !== 1) {
+                setIndexValue(indexValue - 1)
 
-//         }
-//         else if (indexValue === 1) {
-//             setIndexValue(projectCard.length)
-//         }
-//     }
+            }
+            else if (indexValue === 1) {
+                setIndexValue(projectCard.length)
+            }
+        }
 
 
     return (
@@ -60,7 +60,7 @@ const Work = () => {
                     </div>
                     <div className="work-project-section">
                         <div className="work-project-main" id="work-project-main">
-                            {/* {projectCard.map((val, index) => {
+                            {projectCard.map((val, index) => {
                                 return (
                                     <div key={index} className={indexValue === index + 1 ? "project-main" : "project-main-hide"} >
                                         <div className="work-image-box">
@@ -68,23 +68,23 @@ const Work = () => {
                                         </div>
                                     </div>
                                     )
-                            })} */}
+                            })}
                         </div>
                         <div className="work-project-bottom ">
-                            <div className="work-arrow-btn">
+                            <div className="work-arrow-btn flex flex-col justify-center items-center">
                                 <div className="arrow-btn-count">
-                                    {/* <span>{indexValue}</span> of <span>{projectCard.length}</span> */}
+                                    <span className="text-lg text-white">{indexValue} of {projectCard.length}</span>
                                 </div>
-                                <div className="arrow-btn">
-                                    {/* <AiOutlineArrowLeft className="arrow-button" onClick={leftClick} />
-                                    <AiOutlineArrowRight className="arrow-button" onClick={rightClick} /> */}
+                                <div className="arrow-btn flex">
+                                    <AiOutlineArrowLeft className="arrow-button text-white text-xl" onClick={leftClick} />
+                                    <AiOutlineArrowRight className="arrow-button text-white text-xl" onClick={rightClick} />
                                 </div>
                             </div>
-                            <div className="work-project-name">
+                            <div className="work-project-name text-white text-center">
                                 <h3>Project</h3>
                                 <h4>Name</h4>
                             </div>
-                            <div className="work-idea-name">
+                            <div className="work-idea-name text-white text-center">
                                 <h3>Idea</h3>
                                 <h4>Name</h4>
                             </div>
